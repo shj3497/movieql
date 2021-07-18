@@ -14,3 +14,5 @@
 
 localhost:4000  
 PostMan같은 기능을 한다.
+
+<!-- Mutation은 Database 상태가 변할때 사용되는것 -->
