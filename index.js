@@ -1,8 +1,17 @@
 import { GraphQLServer } from 'graphql-yoga';
-import resolvers from './graphql/resolvers';
+// import resolvers from './graphql/resolvers';
+import resolvers from './graphql/movieAPI/resolvers';
 
+// TODO 기본 예제 
+// const server = new GraphQLServer({
+//   typeDefs: "graphql/schema.graphql",
+//   resolvers
+// });
+
+
+// TODO MovieAPI를 활용한 예제
 const server = new GraphQLServer({
-  typeDefs: "graphql/schema.graphql",
+  typeDefs: "graphql/movieAPI/schema.graphql",
   resolvers
 });
 
