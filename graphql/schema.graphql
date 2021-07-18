@@ -1,0 +1,14 @@
+# Query는 단순히 내가 정보를 받을 때만 쓴다. (Select)
+# Mutation: DB에 있는 정보를 수정할 때 (Insert, Update, Delete)
+# GraphQL 서버에 할 것은 어떤 Mutations, Query들을 우리가 가졌는지 알려주어야한다.
+
+#? Schema에 정의된 변수 type이 다르면 에러 반환
+type Query {
+  person: HyeokJin! # '!' (필수)
+}
+
+type HyeokJin {
+  name: String!
+  age: Int!
+  gender: String!
+}
